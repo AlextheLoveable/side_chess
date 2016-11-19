@@ -10,7 +10,7 @@ t_words = [ 'pie', 'autumn', 'baste', 'colonists', 'cornucopia',
             'tisquantum', 'turkey', 'voyage', 'wampanoag', 'wishbone', 'yam'
 ]
 
-def gobble():
+def thanksgivingLinkGen():
 
     separator = '-'
     numlength = 4
@@ -20,5 +20,3 @@ def gobble():
     newNum = ''.join(choice(nums) for i in range(numlength))
     frags = [word1, word2, newNum]
     return separator.join(frags)
-
-print(gobble())
